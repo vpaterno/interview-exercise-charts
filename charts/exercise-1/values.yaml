@@ -5,5 +5,5 @@ image:
 service:
   port: 80
 readinessProbe:
-  path: /
+  path: /healthz
   initialDelaySeconds: 2
