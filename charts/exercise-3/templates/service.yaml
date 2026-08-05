@@ -3,6 +3,10 @@ kind: Service
 metadata:
   name: {{ .Chart.Name }}
 spec:
+  type: NodePort
   selector: {app: exercise-3-api}
   ports:
-    - {name: http, port: {{ .Values.service.port }}, targetPort: http}
+    - name: http
+      port: {{ .Values.service.port }}
+      targetPort: http
+      nodePort: {{ .Values.service.nodePort }}

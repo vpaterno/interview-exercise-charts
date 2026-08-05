@@ -2,3 +2,4 @@ replicaCount: 2
 image: nginx:1.27-alpine
 service:
   port: 80
+  nodePort: 30083
