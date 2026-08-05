@@ -20,7 +20,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: {{ .Chart.Name }}-credentials
-                  key: API_KEY
+                  key: API_TOKEN
           resources:
             requests: {cpu: 10m, memory: 16Mi}
             limits: {memory: 64Mi}
