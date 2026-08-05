@@ -4,6 +4,4 @@ image:
   tag: "1.27-alpine"
 service:
   port: 80
-nodeSelector:
-  workload-tier: applications
 
