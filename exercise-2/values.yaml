@@ -1,0 +1,8 @@
+replicaCount: 1
+image:
+  repository: httpd
+  tag: "2.4-alpine"
+service:
+  port: 80
+credentials:
+  apiToken: "interview-placeholder-token"
